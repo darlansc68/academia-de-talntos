@@ -1,0 +1,55 @@
+Boa tarde a todos. Segue o nosso segundo Desafio. Como comentado no encontro de hoje, a ideia principal deste segundo desafio é reforçar os conhecimentos
+aprendidos no primeiro, incluindo requisição ajax para consumo de APIs e um básico de tratamento de dados (lembrem-se do que a Flavia falou sobre inputs
+numéricos). Peço a gentileza de se atentarem com qual facilitador estão vinculados para que seja possível dar a melhor atenção possível a todos particip
+antes. Lembrando que os anexos incluídos no chat tb ficam disponíveis através da aba Arquivos (ao lado do título deste Chat). As APIs de fora do BB estarão
+funcionais até quinta-feira (13/10). Bons estudos.
+
+Semana 4 – 10a14/10/2022
+Introdução à Javascript
+Curso 200535 Javascript: Programando na linguagem web 
+(Capítulos 5 ao 9)
+Desafio 2
+Mínimo necessário:
+Com base nos:
+Conteúdo visto no Curso citado acima e
+No Desafio 1.Refatore o código do primeiro desafio, promovendo as seguintes melhorias:
+
+1.Ao clicar no botão de inserção de cliente, a página faça uma requisição ajax, para uma das APIs listadas abaixo, inserindo o 
+cliente no banco de dados (BD) disponibilizado;
+
+2.Após feita a inserção no BD, a página deverá fazer outra requisição ajax, desta vez solicitando a lista de 
+clientes;
+
+3.De posse da listagem de clientes (item 2) a tabela de clientes exibida na página deverá ser atualizada;
+
+Bônus opcional:
+1.Quando der dois cliques num cliente da tabela, ao invés de apagar o cliente na tabela, deverá ser feita requisição ajax apagando o cliente
+do BD;
+
+2.Após feita a deleção no BD, a página deverá fazer outra requisição ajax, desta vez solicitando a lista de clientes;
+
+3De posse da listagem de clientes(item 2) a tabela de clientes exibida na página deverá ser atualizada;
+
+APIs POST (inserir novo registro):
+
+{"nome": “Flávia","data_nascimento": "1991-09-05","renda": 1000,"cpf": 12345678912,"matricula":"F3295813“}
+https://pxl0hosp0577.dispositivos.bb.com.br/talentosos/inserirCliente(pela intranet)
+http://www.ksamochvalov.com/academia/inserirCliente.php (pela internet)
+
+APIs DELETE (apagar um registro):
+
+{"cd_clientes": 1}
+https://pxl0hosp0577.dispositivos.bb.com.br/talentosos/inserirCliente (pela intranet)
+http://www.ksamochvalov.com/academia/inserirCliente.php (pela internet)
+
+APIs PATCH (atualizar um registro):
+
+{"cd_clientes": 1,"nome": "Flavia de Andrade Nobrega","data_nascimento": "1991-09-05“}
+https://pxl0hosp0577.dispositivos.bb.com.br/talentosos/AtualizarCliente (pela intranet)
+http://www.ksamochvalov.com/academia/AtualizarCliente.php (pela internet)
+
+APIs GET (listar todos pela matricula):
+
+substitua Fxxxxxxx por sua matricula
+https://pxl0hosp0577.dispositivos.bb.com.br/talentosos/listarClientes/Fxxxxxxx (pela intranet)
+http://www.ksamochvalov.com/academia/ listarClientes.php?matricula=Fxxxxxxx (pela internet)
