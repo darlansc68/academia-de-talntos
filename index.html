@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulário clientes</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h2 class="titulo">Formulário clientes</h2>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Dados clientes</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Nome</th>
+							<th>Data de nascimento</th>
+							<th>Renda</th>
+							<th>CPF</th>
+							<th>Matricula</th>
+							<th>Idade</th>
+							
+						</tr>
+					</thead>
+					<tbody id="tabela-clientes">
+						<tr class="cliente" >
+							<td class="info-id">1</td>
+							<td class="info-nome">Paulo dos santos mota</td>
+							<td class="info-dataDeNascimento">10/12/1982</td>
+							<td class="info-renda">4000.00</td>
+							<td class="info-cpf">00000000000</td>
+							<td class="info-matricula">F0000000</td>
+							<td class="info-idade">0</td>
+							
+						</tr>
+
+						<tr class="cliente" >
+							<td class="info-id">2</td>
+							<td class="info-nome">João Roberto azevedo</td>
+							<td class="info-dataDeNascimento">17/06/1991</td>
+							<td class="info-renda">4000.00</td>
+							<td class="info-cpf">11111111111</td>
+							<td class="info-matricula">F1111111</td>
+							<td class="info-idade">0</td>
+							
+						</tr>
+
+						<tr class="cliente" >
+							<td class="info-id">3</td>
+							<td class="info-nome">Daniel da Silva Sauro</td>
+							<td class="info-dataDeNascimento">15/11/1975</td>
+							<td class="info-renda">3500.00</td>
+							<td class="info-cpf">22222222222</td>
+							<td class="info-matricula">F2222222</td>
+							<td class="info-idade">0</td>
+							
+						</tr>
+
+						<tr class="cliente" >
+							<td class="info-id">4</td>
+							<td class="info-nome">Adalberto Pedro Rodrigues</td>
+							<td class="info-dataDeNascimento">02/07/1999</td>
+							<td class="info-renda">5000.00</td>
+							<td class="info-cpf">33333333333</td>
+							<td class="info-matricula">F3333333</td>
+							<td class="info-idade">0</td>
+							
+						</tr>
+
+						<tr class="cliente" >
+							<td class="info-id">5</td>
+							<td class="info-nome">Darlan dos Santos Carvalho</td>
+							<td class="info-dataDeNascimento">13/09/1986</td>
+							<td class="info-renda">1500.00</td>
+							<td class="info-cpf">44444444444</td>
+							<td class="info-matricula">F4444444</td>
+							<td class="info-idade">0</td>
+						</tr>
+					</tbody>
+				</table>
+				<spam id="erro-ajax" class="invisivel">Erro ao buscar os Clientes</spam>
+				<button id="buscar-cliente" class="botao bto-principal">Buscar cliente</button>
+				<div class="container">
+					<span id="soma-salarios">Somatória</span>
+					<span id="resultado"></span>
+				</div>
+			</section>
+		</main>
+		<section class="container">
+			<h2 id="titulo-form">Dados a inserir</h2>
+			<ul id="mensagens-erro"></ul>
+			<form id="form-adiciona">
+				<div class="grupo">
+					<label for="nome">Nome:</label>
+					<input id="nome" name="nome" type="text" placeholder="digite o nome do seu paciente" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="cpf">CPF</label>
+					<input id="cpf" name="cpf" type="text" placeholder="digite o CPF do seu paciente" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="nascimento">Data de nascimento</label>
+					<input id="nascimento" name="nascimento" type="text" placeholder="digite a data de nascimento do seu paciente" class="campo campo-medio">
+				</div>
+				<div class="grupo">
+					<label for="renda">Renda</label>
+					<input id="renda" type="text" placeholder="digite a renda do cliente" class="campo campo-medio">
+				</div>
+				<button id="dados-clientes" class="botao bto-principal">Adicionar</button>
+			</form>
+		</section>
+		
+		<script src="js/formulario.js" ></script>
+		<script src="js/remover.js" ></script>
+		<script src="js/somatoria.js" ></script>
+		<script src="js/calcula-data.js" ></script>
+		<script src="js/buscar-clientes.js" ></script>
+	</body>
+</html>
